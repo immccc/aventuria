@@ -2,5 +2,10 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/aventuria/node_modules
-/aventuria/bin
+/node_modules
+/bin
+/**/*.js
+!/src/frontend/systemjs.config.js
+/typings/globals
+/typings/typings
+/npm-debug.log
