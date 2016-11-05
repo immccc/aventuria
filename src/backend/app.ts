@@ -24,8 +24,9 @@ class Server {
       this.app.set("views", path.join(__dirname, "..", "frontend", "views"));
       this.app.set("view engine", "hbs");
 
-      this.app.use(express.static(path.join(__dirname, "..", "..")));
-      this.app.use(express.static(path.join(__dirname, "..", "frontend")));
+      this.app.use("/scripts", express.static(path.join(__dirname, "..", "frontend")));
+      this.app.use("/node_modules", express.static(path.join(__dirname, "..", "..", "node_modules")));
+      this.app.use("/resources/styles", express.static(path.join(__dirname, "..", "resources", "styles")));
     }
 
     private defineRouting() {

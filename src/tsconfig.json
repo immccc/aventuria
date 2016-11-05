@@ -27,13 +27,5 @@
   },
   "filesGlob": [
     "**/*.ts"
-  ],
-  "files": [
-    "_all.d.ts",
-    "backend/app.ts",
-    "backend/routes/app.router.ts",
-    "frontend/components/app.component.ts",
-    "frontend/main.ts",
-    "frontend/modules/app.module.ts"
   ]
 }
