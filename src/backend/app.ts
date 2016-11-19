@@ -27,6 +27,7 @@ class Server {
       this.app.use("/scripts", express.static(path.join(__dirname, "..", "frontend")));
       this.app.use("/node_modules", express.static(path.join(__dirname, "..", "..", "node_modules")));
       this.app.use("/resources/styles", express.static(path.join(__dirname, "..", "resources", "styles")));
+      this.app.use("/resources/fonts", express.static(path.join(__dirname, "..", "resources", "fonts")));
     }
 
     private defineRouting() {
